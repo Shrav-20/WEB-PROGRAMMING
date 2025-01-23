@@ -25,17 +25,19 @@ animation  5s infinite;
 rect{
 animation:web 4s infinite;
 }
-.Squ{
+.bouncing-ball{
 	width: 100px;
 	height:100px;
 	background-color: red;
+	border-radius: 50%;
 	position: relative;
-	animation: Sq 4s ease-in-out infinite;
+	animation: bouncing 4s ease-in-out infinite;
 }
-@keyframes Sq{
+@keyframes bouncing{
 	0%{top:0; left:0; background-color=red;}
 	25%{top:0; left: calc(100%-100px); background-color: blue}
 	50%{top: calc(100%-100px); left:100%; background-color: green;}
 	75%{top: 100%; left:0; background-color: yellow;}
 	100%{top:0; left:0; background-color: red;}
 }
+
